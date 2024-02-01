@@ -1,0 +1,233 @@
+.layout-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  font-family: "Epilogue", sans-serif;
+  align-items: center;
+}
+.layout-content .header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  justify-content: space-between;
+}
+.layout-content .header #menu-mobile {
+  display: none;
+}
+.layout-content .header img {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+.layout-content .header .nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.layout-content .header .nav .options-nav .dropdown {
+  float: left;
+  overflow: hidden;
+  display: flex;
+}
+.layout-content .header .nav .options-nav .dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: #696969;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+}
+.layout-content .header .nav .options-nav .dropdown .dropbtn:hover {
+  color: #141414;
+}
+.layout-content .header .nav .options-nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fafafa;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 65px;
+  border-radius: 10px;
+}
+.layout-content .header .nav .options-nav .dropdown-content a {
+  float: none;
+  color: #696969;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.layout-content .header .nav .options-nav .dropdown-content a img {
+  margin-right: 10px;
+}
+.layout-content .header .nav .options-nav .dropdown-content a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+.layout-content .header .nav .options-nav .features {
+  left: 78px;
+}
+.layout-content .header .nav .options-nav .show {
+  display: block;
+}
+.layout-content .header .nav .options-nav a {
+  color: #696969;
+  text-decoration: none;
+}
+.layout-content .header .nav .options-nav a:hover {
+  color: #141414;
+}
+.layout-content .header .nav .options-nav .careers {
+  margin-right: 45px;
+}
+.layout-content .header .nav .options-login button {
+  color: #696969;
+  border: 1px solid #696969;
+  font-family: inherit;
+  padding: 10px;
+  background: transparent;
+  border-radius: 10px;
+  margin: 10px;
+}
+.layout-content .header .nav .options-login button.login {
+  border: none;
+}
+.layout-content .header .nav .options-login button.login:hover {
+  border: none;
+}
+.layout-content .header .nav .options-login button:hover {
+  color: #141414;
+  border: 1px solid #141414;
+}
+.layout-content .content {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+.layout-content .content .introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.layout-content .content .introduction .description {
+  display: flex;
+  flex-direction: column;
+}
+.layout-content .content .introduction .description h1 {
+  font-weight: 700;
+  font-size: 75px;
+  color: #141414;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 70px;
+}
+.layout-content .content .introduction .description h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #696969;
+  display: flex;
+  flex-direction: column;
+}
+.layout-content .content .introduction .description button {
+  background: #141414;
+  margin-top: 37px;
+  width: 30%;
+  color: #fafafa;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: "Epilogue";
+  font-weight: 700;
+  transition-duration: 0.4s;
+}
+.layout-content .content .introduction .description button:hover {
+  background: #fafafa;
+  color: #141414;
+  border: 1px solid #141414;
+}
+.layout-content .content .introduction .clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 92%;
+  margin-bottom: 0;
+  margin-top: 60px;
+}
+.layout-content .content .artwork {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+.layout-content .content .artwork .img-desktop {
+  width: 72%;
+  display: flex;
+}
+.layout-content .content .artwork .img-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+  body .layout-content {
+    width: 100%;
+  }
+  body .layout-content .header #menu-mobile {
+    display: block;
+    background: transparent;
+    border: none;
+  }
+  body .layout-content .header #nav {
+    display: none;
+  }
+  body .layout-content .header #nav.active {
+    display: flex;
+  }
+  body .layout-content .content {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  body .layout-content .content .introduction {
+    width: 100%;
+  }
+  body .layout-content .content .introduction .description {
+    align-items: center;
+  }
+  body .layout-content .content .introduction .description h1 {
+    margin: 5px;
+    flex-direction: row;
+    font-size: 42px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  body .layout-content .content .introduction .description h1 span {
+    margin-right: 8px;
+  }
+  body .layout-content .content .introduction .description h2 {
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+  }
+  body .layout-content .content .artwork {
+    width: 100%;
+  }
+  body .layout-content .content .artwork .img-desktop {
+    display: none;
+  }
+  body .layout-content .content .artwork .img-mobile {
+    display: flex;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

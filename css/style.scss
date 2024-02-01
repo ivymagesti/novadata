@@ -229,6 +229,40 @@ $almost-white: #fafafa;
         }
         #nav.active {
           display: flex;
+          position: absolute;
+          background: #fafafa;
+          flex-direction: column;
+          width: 50%;
+          top: 63px;
+          font-size: 22px;
+          height: 100%;
+          right: 0;
+
+          .options-nav {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            font-size: 22px;
+
+            .dropdown{
+              button{
+                font-size: 22px;
+                margin: 10px;
+              }
+
+              .dropdown-content{
+                top: 80px;
+              }
+              .features{
+                left: 8px;
+                top: 36px;
+              }
+            }
+
+            a{
+              margin: 7px 0 12px 10px;
+            }
+          }
         }
       }
       .content {
@@ -245,16 +279,16 @@ $almost-white: #fafafa;
               font-size: 42px;
               justify-content: center;
               margin-top: 20px;
-              
-              span{
+
+              span {
                 margin-right: 8px;
               }
             }
 
-            h2{
-                display: inline;
-                text-align: center;
-                font-size: 22px;   
+            h2 {
+              display: inline;
+              text-align: center;
+              font-size: 22px;
             }
           }
         }

@@ -192,6 +192,34 @@
   }
   body .layout-content .header #nav.active {
     display: flex;
+    position: absolute;
+    background: #fafafa;
+    flex-direction: column;
+    width: 50%;
+    top: 63px;
+    font-size: 22px;
+    height: 100%;
+    right: 0;
+  }
+  body .layout-content .header #nav.active .options-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 22px;
+  }
+  body .layout-content .header #nav.active .options-nav .dropdown button {
+    font-size: 22px;
+    margin: 10px;
+  }
+  body .layout-content .header #nav.active .options-nav .dropdown .dropdown-content {
+    top: 80px;
+  }
+  body .layout-content .header #nav.active .options-nav .dropdown .features {
+    left: 8px;
+    top: 36px;
+  }
+  body .layout-content .header #nav.active .options-nav a {
+    margin: 7px 0 12px 10px;
   }
   body .layout-content .content {
     flex-direction: column-reverse;
